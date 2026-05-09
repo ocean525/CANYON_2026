@@ -1,0 +1,73 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+# tRef = 0.04842, 0.0433231, 0.0382263, 0.0331295,
+#        0.0280326, 0.0229358, 0.0178389, 0.0127421,
+#        0.00764526, 0.00254842, -0.00254842, -0.00764526,
+#       -0.0127421, -0.0178389, -0.0229358, -0.0280326,
+#       -0.0331295, -0.0382263, -0.0433231, -0.04842,
+ tRefFile ='tRef',
+ sRef= 200*35.,
+ viscAz=1.E-5,
+ viscAh=1.E-2,
+ no_slip_sides=.TRUE.,
+ no_slip_bottom=.TRUE.,
+ bottomDragQuadratic=0.0025,
+ f0=0.0,
+ beta=0.0,
+ eosType='LINEAR',
+ tAlpha=2.E-4,
+ sBeta =0.0,
+ gravity=9.81,
+ nonHydrostatic=.TRUE.,
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ hFacMin=0.2,
+ implicSurfPress=0.5,
+ hFacInf=0.2,
+ hFacSup=1.8,
+ saltStepping=.FALSE.,
+ useSingleCpuIO=.TRUE.,
+ globalFiles=.TRUE.,
+ readBinaryPrec=64,
+ writeBinaryPrec=64,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=30,
+ cg2dTargetResidual=1.E-6,
+ cg3dMaxIters=30,
+ cg3dTargetResidual=1.E-6,
+ &
+
+# Time stepping parameters
+ &PARM03
+ nIter0=0,
+ endTime=561600.,
+ deltaT=10.,
+ abEps=0.1,
+ chkPtFreq=129600.,
+ pChkptFreq=561600.,
+# writePickupAtEnd=.TRUE.,
+ dumpFreq=864000.,
+ monitorFreq=21600.,
+ monitorSelect=2,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ delXfile='delXvar',
+ delYfile='delYvar',
+ delZ=200*10.,
+ &
+
+# Input datasets
+ &PARM05
+ hydrogThetaFile='T.init',
+ bathyFile='Bathy_L30_W1',
+ &

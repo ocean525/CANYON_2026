@@ -1,0 +1,30 @@
+# Open-boundaries
+ &OBCS_PARM01
+ OB_singleIeast  = -1,
+ OB_singleIwest  =  1,
+ OB_singleJnorth = -1,
+ OB_singleJsouth =  1,
+ useOrlanskiEast=.TRUE.,
+ useOrlanskiWest=.FALSE.,
+ useOrlanskiNorth=.TRUE.,
+ useOrlanskiSouth=.TRUE.,
+ OBCS_monitorFreq=43200.,
+# useOBCSsponge   = .TRUE.,
+# OBCSSponge_E    = .FALSE.,
+# OBCSSponge_W    = .FALSE.,
+# OBCSSponge_N    = .TRUE.,
+# OBCSSponge_S    = .TRUE.,
+# OBStFile        = 'east_t',
+# OBNtFile        = 'east_t',
+ &
+
+ &OBCS_PARM02
+# Cmax=0.45,
+# cVelTimeScale=1000.,
+ &
+
+ &OBCS_PARM03
+# spongeThickness=3,
+# Vrelaxobcsinner = 21600.,
+# Vrelaxobcsbound = 10800.,
+ &
