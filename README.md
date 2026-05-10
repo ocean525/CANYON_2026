@@ -63,5 +63,6 @@ For case Y300, it has different SIZE.h in code(in code_Y300), which needs recomp
 Note that T.init for Y300 is named T.init_Y300, but when used in data, you need to rename it!
 
 
-
+Anything that is not clear here, please send an email to Shiqiang.Hu@uea.ac.uk
+I'll try to help.
 
