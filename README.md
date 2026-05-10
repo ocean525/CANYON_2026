@@ -2,7 +2,7 @@ https://github.com/ocean525/CANYON_2026/
 %% make input files first;
 
 
-All the input files is provided in the zenodo repository as well. 
+All the input files is provided in the zenodo repository as well.  (https://doi.org/10.5281/zenodo.20100764)
 
 
 
