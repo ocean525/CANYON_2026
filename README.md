@@ -1,4 +1,4 @@
-%% make input files first
+%% make input files first;
 All the input files is provided in the zenodo repository as well. 
 
 (1) bathy files (eg. Bathy_L30_W10 is the Control case)
@@ -10,7 +10,7 @@ Only when you need new topography, you could use Make_input_part1.m and Make_inp
 This means you may need to modify the SIZE.h in code as well, if it have a different grid size.
 
 
-%% run the model
+%% run the model;
 Here we assume you already have a basic understanding of how MITgcm works, so we only 
 give the "code" and "input" for most cases and code_Y300, input_Y300 for case Y300.
 
