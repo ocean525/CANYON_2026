@@ -1,4 +1,6 @@
 %% make input files first;
+
+
 All the input files is provided in the zenodo repository as well. 
 
 (1) bathy files (eg. Bathy_L30_W10 is the Control case)
@@ -11,6 +13,8 @@ This means you may need to modify the SIZE.h in code as well, if it have a diffe
 
 
 %% run the model;
+
+
 Here we assume you already have a basic understanding of how MITgcm works, so we only 
 give the "code" and "input" for most cases and code_Y300, input_Y300 for case Y300.
 
@@ -25,6 +29,8 @@ Enter the Input, then:
 run auto_checknan.sh to get .mat result data for each case directly! 
 
 It will get the restart files of cycle 13, without any output (cause we don't need them), under "data_13cycle" and "data.pkg_13cycle".
+
+
 Then it will run the model again from cycle 13 and output files we need, under "data_900" and "data.pkg_900".
 Finally, it will run the python code to get all the result and move them to ../mat/ with their name after case name. (read_energy_all.py)
 
