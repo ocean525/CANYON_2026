@@ -3,8 +3,11 @@
 
 All the input files is provided in the zenodo repository as well. 
 
+
 (1) bathy files (eg. Bathy_L30_W10 is the Control case)
-(2) initial temperature file for the whole area(T.init for all cases except T.init_Y300 for Y300)
+(2) initial temperature file for the whole area
+(T.init for all cases except T.init_Y300 for Y300, they are too big to upload here, it is in the zenodo.)
+
 (3) grid space files (delXvar, delYvar)
 (4) initial temperature 2-d profile (tRef)
 
@@ -62,6 +65,10 @@ Other input files such as T.init, delY, delX, tRef are all the same.
 For case Y300, it has different SIZE.h in code(in code_Y300), which needs recompile. And it have different input files (in Input_Y300).
 Note that T.init for Y300 is named T.init_Y300, but when used in data, you need to rename it!
 
+
+%% Finally, all the code and result data are in the zenodo repository
+They are not the original model output, as they'are too much and too big, but we try to provide
+the code to analysis them. For example, read_energy_all.py in the input is used to get .mat files.
 
 
 
