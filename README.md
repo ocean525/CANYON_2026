@@ -1,7 +1,9 @@
+https://github.com/ocean525/CANYON_2026/
 %% make input files first;
 
 
 All the input files is provided in the zenodo repository as well. 
+
 
 
 (1) bathy files (eg. Bathy_L30_W10 is the Control case)
