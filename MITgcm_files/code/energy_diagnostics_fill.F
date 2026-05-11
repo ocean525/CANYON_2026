@@ -439,10 +439,10 @@ C KEp and APEp sums:
 C add pbc and ebc 
                     UFLUX(i,j,K,bi,bj)=(PW-P0W(i,j,bi,bj))
      $                   *(upW)*hFacW(i,j,K,bi,bj)+
-     $              uW*(kEpW+hkEpW+EpW)*DRf(K)*hFacW(i,j,K,bi,bj)
+     $              uW*(kEpW+hkEpW+EpW)*hFacW(i,j,K,bi,bj)
                     VFLUX(i,j,K,bi,bj)=(PS-P0S(i,j,bi,bj))
      $                   *(vpS)*hFacS(i,j,K,bi,bj)+
-     $              vS*(kEpS+hkEpS+EpS)*DRf(K)*hFacS(i,j,K,bi,bj)
+     $              vS*(kEpS+hkEpS+EpS)*hFacS(i,j,K,bi,bj)
 C KE and APE:
                     HKE(i,j,bi,bj)=HKE(i,j,bi,bj)+kEpC*DRf(K)*hFacC(i,j
      $                   ,K,bi,bj)
